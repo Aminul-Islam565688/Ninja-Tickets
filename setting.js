@@ -9,6 +9,17 @@ function readOnly(Idname){
 }
 
 
+//Display None and Display Block Function
+function display(id,boolean){
+    document.getElementById(id).style.display="none";
+    if(boolean==true){
+        document.getElementById("processing-Tickets").style.display="block";
+    }
+    else if(boolean==false){
+        document.getElementById("last-content").style.display="block";
+    }
+}
+
 //Button Function for Increment and Decrement and Cost
 function button(ticketClass,buttonCase){
     let flightClassNumber = stringToNumber(ticketClass)

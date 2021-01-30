@@ -26,92 +26,114 @@
         </nav>
     </header>
 
-    <!--Booking Section-->
-    <main class="main-content container">
-        <div class="booking-form">
-            <h3>Booking Flights</h3>
-            <div class="input-group">
-                <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
-            </div>
-            <div class="input-group">
-                <label for="">Flying To</label>
-                <input class="inp-style" type="text" name="" placeholder="New York, United States">
-            </div>
-            <div class="inputs">
+    <main>
+        <!--Booking Section-->
+        <section id="flight-booking-form" class="main-content container">
+            <div class="booking-form">
+                <h3>Booking Flights</h3>
                 <div class="input-group">
-                    <label" for="">Departure</label>
-                    <input class="inp-style" type="date" name="">
+                    <label for="">Flying From</label>
+                    <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
                 </div>
                 <div class="input-group">
-                    <label for="">Return</label>
-                    <input class="inp-style" type="date" name="">
+                    <label for="">Flying To</label>
+                    <input class="inp-style" type="text" name="" placeholder="New York, United States">
                 </div>
-            </div>
-            <div class="input-group f-class">
-                <div>
-                    <label for="">First Class ($150)</label>
-                    <input id="FirstClass-Cost" class="inp-style inp-width" type="text" name="" value="150">
-                </div>
-                <div class="plus-minus-btn">
-                    <p>
-                        <span onclick="button('FirstClass',true)"
-                        class="plus-button">+</span>
-                        <input id="FirstClass-Center-Input" class="center-input" type="text" value="1">
-                        <span onclick="button('FirstClass',false)" class="minus-button">-</span>
-                    </p>
-                </div>
-            </div>
-            
-            <div class="input-group f-class economy-input">
-                <div>
-                    <label for="">Economy ($100)</label>
-                    <input id="Economy-Cost" class="inp-style inp-width" type="text" name="" value="100">
-                </div>
-                <div class="plus-minus-btn">
-                    <p>
-                        <span class="plus-button" onclick="button('Economy',true)">+</span>
-                        <input id="Economy-Center-Input" class="center-input" value="1" type="text">
-                        <span class="minus-button" onclick="button('Economy',false)">-</span> 
-                    </p>
-                </div>
-            </div>
-            <div class="calculations">
-                <div class="amount">
-                    <div class="left">
-                        <p>Subtotal</p>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                            <input class="inp-style" type="date" name="">
                     </div>
-                    <div class="right">
-                        <p>$ <span id="Sub-Total">250</span></p>
+                    <div class="input-group">
+                        <label for="">Return</label>
+                        <input class="inp-style" type="date" name="">
+                    </div>
+                </div>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">First Class ($150)</label>
+                        <input id="FirstClass-Cost" class="inp-style inp-width" type="text" name="" value="150">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <p>
+                            <span onclick="button('FirstClass',true)" class="plus-button">+</span>
+                            <input id="FirstClass-Center-Input" class="center-input" type="text" value="1">
+                            <span onclick="button('FirstClass',false)" class="minus-button">-</span>
+                        </p>
                     </div>
                 </div>
 
-                <div class="amount">
-                    <div class="left">
-                        <p>Charge 10% VAT</p>
+                <div class="input-group f-class economy-input">
+                    <div>
+                        <label for="">Economy ($100)</label>
+                        <input id="Economy-Cost" class="inp-style inp-width" type="text" name="" value="100">
                     </div>
-                    <div class="right">
-                        <p>$ <span id="Vat">25</span></p>
+                    <div class="plus-minus-btn">
+                        <p>
+                            <span class="plus-button" onclick="button('Economy',true)">+</span>
+                            <input id="Economy-Center-Input" class="center-input" value="1" type="text">
+                            <span class="minus-button" onclick="button('Economy',false)">-</span>
+                        </p>
                     </div>
                 </div>
-                <hr>
-                <div class="amount">
-                    <div class="left">
-                        <h4>Total</h4>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p>$ <span id="Sub-Total">250</span></p>
+                        </div>
                     </div>
-                    <div class="right">
-                        <p>$ <span id="Total">275</span></p>
-                    </div> 
-                </div>
-            </div>
-            <button class="btn-style">Book Now</button>
-        </div>
 
-        <div class="booking-content">
-            <h1>discover <br> around the world</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
-        </div>
-    </section>
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p>$ <span id="Vat">25</span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p>$ <span id="Total">275</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="display('flight-booking-form',true)" class="btn-style">Book Now</button>
+            </div>
+
+            <div class="booking-content">
+                <h1>discover <br> around the world</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
+                    veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt
+                    nobise voluptatibus quam</p>
+            </div>
+        </section>
+
+        <!-- Second Section -->
+        <section id="processing-Tickets">
+            <div id="processing-Container">
+                <div class="processing">
+                    <h1>Your Ticket Booking is processing</h1>
+                    <h4>Shortly You Will Get An Email</h4>
+                </div>
+                <button onclick="display('processing-Container',false)" id="Second-Section-btn">OK</button>
+            </div>
+        </section>
+        <!-- Last Section -->
+        <section id="last-section">
+            <div id="last-content">
+                <h1>Thank You</h1>
+                <h4>Stay With Us</h4>
+                <p>Have a Good Journey</p>
+            </div>
+        </section>
+    </main>
 
     <!--Thank You-->
     <script src="setting.js"></script>
