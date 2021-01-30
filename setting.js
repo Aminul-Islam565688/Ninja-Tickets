@@ -11,13 +11,23 @@ function readOnly(Idname){
 
 //Display None and Display Block Function
 function display(id,boolean){
+    let totalNumber = stringToNumber("Total")
     document.getElementById(id).style.display="none";
-    if(boolean==true){
-        document.getElementById("processing-Tickets").style.display="block";
+    if(totalNumber > 0){
+        if(boolean==true){
+            document.getElementById("processing-Tickets").style.display="block";
+        }
+        else if(boolean==false){
+            document.getElementById("last-content").style.display="block";
+        }
     }
-    else if(boolean==false){
-        document.getElementById("last-content").style.display="block";
+    else if(totalNumber == 0){
+        document.getElementById("Error-content").style.display="block";
     }
+}
+function error(){
+    document.getElementById("Error-section").style.display="none";
+    document.getElementById("flight-booking-form").style.display="block";
 }
 
 //Button Function for Increment and Decrement and Cost
